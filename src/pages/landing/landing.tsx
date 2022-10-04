@@ -1,6 +1,6 @@
 import { FC } from "react";
 import BookCard from "../../components/bookcard/BookCard";
-import Navbar from '../../components/navbar/navbar'
+import Navbar from '../../components/navbar/navbar';
 
 interface LandingProps {
     
