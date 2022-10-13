@@ -1,6 +1,8 @@
 import { FC } from "react";
+import Added from "../../components/Added/Added";
 import BookCard from "../../components/bookcard/BookCard";
-import Navbar from '../../components/navbar/navbar';
+import Letter from "../../components/letter/Letter";
+import BookSlider from "../../components/slider/BookSlider";
 
 interface LandingProps {
     
@@ -9,8 +11,10 @@ interface LandingProps {
 const Landing: FC<LandingProps> = () => {
     return (
         <div>
-            <Navbar />
             <BookCard />
+            <BookSlider />
+            <Added />
+            <Letter />
         </div>
     );
 }

@@ -1,7 +1,6 @@
 import { FC } from "react";
 import style from "./navbar.module.scss";
 import President from "../../assets/president.jpg";
-// import { Card, Col, Row } from 'antd';
 
 interface NavbarProps {}
 
