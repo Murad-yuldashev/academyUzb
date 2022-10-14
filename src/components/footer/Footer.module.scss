@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-image: url('../../assets/footer_oboy.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    .textColor {
+        color: #fff;
+    }
+}

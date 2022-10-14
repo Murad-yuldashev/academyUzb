@@ -1,0 +1,16 @@
+.caruoselContainer {
+  width: 100vw;
+  background-image: url('../../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .caruoselBox {
+    height: 90vh;
+  }
+  .color-dark {
+    color: #000000;
+  }
+  .headerCaruosel {
+    margin-bottom: 60px;
+  }
+}

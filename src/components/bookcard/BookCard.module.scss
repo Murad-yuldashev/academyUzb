@@ -1,0 +1,28 @@
+.carouselContainer {
+    width: 100vw;
+    height: auto;
+    background-image: url('../../assets/greyOboy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .carouselBox {
+        width: 100vw;
+
+        display: flex;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .carouselImg {
+        width: auto;
+        height: 300px;
+        border: 2px solid #fff;
+        margin: 80px 0;
+    }
+    .carouselBtn {
+        background-color: rgb(111, 112, 112);
+        width: 100px;
+        // display: flex;
+        align-items: center;
+    }
+}
