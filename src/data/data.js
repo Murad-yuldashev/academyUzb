@@ -1,4 +1,6 @@
-import pdfFolder from './Essential-English.pdf';
+import pdfFolder from './Asrorbek shakhobiddinov.pdf';
+import pdfFolder2 from './YuldashevMukhammad.pdf';
+
 export const data = [
     {
         id: 1,
@@ -9,7 +11,7 @@ export const data = [
     },
     {
         id: 2,
-        pdf: pdfFolder,
+        pdf: pdfFolder2,
         date: '12.10.2022',
         title: 'Lorem ipsum dolor.',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates exercitationem deserunt assumenda temporibus sed, dicta incidunt impedit nisi nobis.'

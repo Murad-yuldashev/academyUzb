@@ -34,7 +34,6 @@ function PdfFolder() {
         .map((item) => (
           <>
             <header className="App-header">
-              <h1>{item.id}</h1>
               <Document
                 file={item.pdf}
                 onLoadSuccess={onDocumentLoadSuccess}
@@ -52,7 +51,7 @@ function PdfFolder() {
                 <button onClick={changePageNext}>Next Page</button>
               )}
             </header>
-            <center>
+            {/* <center>
               <div>
                 <Document
                   file={item.pdf}
@@ -63,7 +62,7 @@ function PdfFolder() {
                   ))}
                 </Document>
               </div>
-            </center>
+            </center> */}
           </>
         ))}
     </div>
