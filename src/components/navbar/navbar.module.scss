@@ -4,75 +4,148 @@
   box-sizing: border-box;
 }
 .wrapper {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../../assets/war.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  position: absolute;
+  z-index: 10;
+  width: 100%;
   .containerMenu {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px;
-    background-color: #fff;
-    opacity: .8;
-    margin-bottom: 120px;
+    padding: 1rem 2rem;
+    background: #ffffffd9;
 
     .logo {
       width: 90px;
       height: 90px;
     }
     .menuBox {
-      width: 50%;
       display: flex;
+      gap: 40px;
       justify-content: space-between;
-      margin-right: 50px;
+      margin-bottom: 0;
+      position: relative;
       li {
         display: block;
-        font-size: 25px;
-        font-family: MuseoSans,Arial,Verdana,sans-serif;
-        letter-spacing: .5px;
-        font-weight: 500;
-        list-style: none;
-        color: #000;
         cursor: pointer;
+        padding: 0.9rem 1.2rem;
+        border-radius: 5px;
         // &:hover {
-        //   background-color: rgb(0, 0, 0);
-        //   padding: 20px 30px;
-        //   color: #fff;
+        //   background-color: #3a3838;
+        //   a {
+        //     color: #ffffff;
+        //   }
+        // }
+        a {
+          text-decoration: none;
+          font-size: 20px;
+          font-family: MuseoSans, Arial, Verdana, sans-serif;
+          letter-spacing: 0.5px;
+          font-weight: 500;
+          list-style: none;
+          color: #000;
+        }
+      }
+      .parentMenu {
+        position: relative;
+        .dropdown {
+          position: absolute;
+          top: 58px;
+          right: -12%;
+          width: 120px;
+          padding: .6rem 0rem;
+          background-color: #fffffffe;
+          border-radius: 8px;
+          z-index: 2;
+          text-align: center;
+          display: none;
+
+          &::before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            left: 50%;
+            top: -5px;
+            transform: rotate(45deg);
+            z-index: -1;
+            display: block;
+          }
+          li {
+            // padding: 0.6rem 1rem;
+            border-radius: 5px;
+            width: 100%;
+            a {
+              color: #000;
+            }
+            &:hover {
+              background-color: #3a3838;
+              a {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+        &:hover {
+          .dropdown {
+            display: block;
+          }
+        }
+        // .subDropdown {
+        //   padding-bottom: 11rem;
         // }
       }
     }
-  }
-  .header {
-        margin-top: 50px;
-        margin-left: 80px;
-        width: 85%;
-        display: flex;
-        justify-content: space-around;
-      .headerImg {
-
-        img {
-          width: 500px;
-          height: auto;
-        }
+    .navbarLogin {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        text-decoration: none;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        line-height: 28px;
+        font-size: 16px;
       }
-      .headerText {
-        width: 700px;
-        h2 {
-            font-size: 25px;
-            color: #fff;
-            margin-bottom: 20px;
-            text-align: center;
-            letter-spacing: 1px;
-        }
-        p {
-            font-family: MuseoSans,Arial,Verdana,sans-serif;
-            font-size: 16px;
-            color: #fff;
-            line-height: 1.5;
+    }
+
+    .navbarSmallscreen {
+      display: none;
+      .navbarSmallscreenOverlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rebeccapurple;
+        transition: 0.5s ease;
+        flex-direction: column;
+        z-index: 5;
+      }
+      .overClose {
+        font-size: 27px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      .menuBoxSmallscreen {
+        list-style: none;
+        li {
+          margin: 2rem;
+          cursor: pointer;
+          font-size: 2rem;
+          text-align: center;
+          &:hover {
+            color: #000;
+          }
         }
       }
     }
+  }
 }

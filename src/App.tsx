@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/navbar';
-import Landing from './pages/landing/landing';
+import Landing from './landing/landing';
 
 function App() {
   return (
