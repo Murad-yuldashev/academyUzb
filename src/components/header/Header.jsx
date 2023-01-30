@@ -10,8 +10,7 @@ const Header = () => {
       </div>
       <div className={style.headerText}>
         <h2>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur,
-          eligendi.
+          Lorem ipsum dolor sit, amet consectetur.
         </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
@@ -19,9 +18,7 @@ const Header = () => {
           sint consequatur incidunt, nobis impedit dolor dolorem ducimus.
           Assumenda quo libero facilis id ipsa laborum, a quasi iure! Ex
           reiciendis cumque ducimus voluptatum tenetur doloribus officiis
-          aspernatur ipsum nihil. Vel ab officia dolores, laudantium quod est id
-          enim doloribus. Sequi nobis provident, deserunt possimus corrupti
-          delectus eos quisquam tempore repudiandae explicabo!
+          aspernatur ipsum nihil.
         </p>
       </div>
     </div>

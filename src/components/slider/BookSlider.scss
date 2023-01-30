@@ -1,8 +1,15 @@
 .caruoselContainer {
   width: 100vw;
-  background-image: url('../../assets/background.jpg');
-  background-repeat: no-repeat;
+  background-color: #C5AFFF;
+  background-image: url(../../assets/BackgroundLetter.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+  padding-bottom: 60px;
 
   .caruoselBox {
     height: 90vh;
@@ -13,4 +20,50 @@
   .headerCaruosel {
     margin-bottom: 60px;
   }
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 250px;
+  height: auto;
+  object-fit: contain;
 }

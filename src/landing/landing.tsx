@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "../components/navbar/navbar";
 import PdfFolder from "../components/PDFfolder/PdfFolder";
 import { Home, BooksPage, Confession, Documents, Person } from "../pages";
 

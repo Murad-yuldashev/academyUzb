@@ -9,6 +9,10 @@ function Letter() {
 
   const navigate = useNavigate();
 
+  const scrol = () => {
+    document.documentElement.scrollTop = 0;
+  };
+
   return (
     <div className="Letter">
       <h2 className="globalWrapper BgTxt">
@@ -17,7 +21,7 @@ function Letter() {
       <div className="letterContainer">
         {data.map((value) => (
           <Card
-            onClick={() => navigate(`/pdf:${value.id}`)}
+            onClick={() => navigate(`/pdf:${value.id}`, scrol)}
             key={value.id}
             date={value.date}
             title={value.title}

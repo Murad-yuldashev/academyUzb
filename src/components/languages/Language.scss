@@ -1,0 +1,73 @@
+.gap{
+    margin-right: 15px;
+    margin-top: -5px;
+    display: flex;
+    gap: 5px;
+}
+.langBox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.hover:hover{
+    background-color: #E5FCED;
+    cursor: pointer;
+    width: 100%;
+}
+
+.bottomContainer {
+
+    .bottomImg {
+        width: 15px;
+        height: auto;
+    }
+}
+
+.dropdown_wrapper{
+    position: absolute;
+    background: white;
+    padding: 12px;
+    top: 30px;
+    border-radius: 5px;
+    z-index: 10;
+}
+.ddImg{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.centerText{
+    left: 20px;
+}
+.pdleft{
+    padding-left: 24px;
+}
+.polyAbsolutes{
+    position: absolute;
+    bottom: 102px;
+    size: 50px;
+}
+
+.changableFlag {
+    width: 40px !important;
+    height: auto;
+    border: 1px solid #97a5fe;
+}
+.flag {
+    width: 35px !important;
+    height: auto;
+    border: 1px solid #97a5fe;
+}
+
+.relativ{
+    display: flex;
+}
+.languageContener{
+    position: relative;
+}
+.Russian{
+    font-family: Roboto;
+}
+.rusFlag{
+    margin-top: 5px;
+}

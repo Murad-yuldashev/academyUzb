@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Button } from "reactstrap";
+import { Button } from "react-bootstrap";
 import style from './Footer.module.scss';
 
 interface FooterProps {}
@@ -7,7 +7,7 @@ interface FooterProps {}
 const Footer: FC<FooterProps> = () => {
   return (
     <div className={style.wrapper}>
-      <footer className="pb-5 text-center text-lg-start text-muted">
+      <footer className="pb-4 text-center text-lg-start text-muted">
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         </section>
         <section className="">
@@ -85,17 +85,22 @@ const Footer: FC<FooterProps> = () => {
                   <i className="fas fa-print me-3"></i> + 01 234 567 89
                 </p>
               </div>
+              {/* <div className="videoFooter">
+                <video>
+                  <source src="../../assets/footer.gif.mp4" type="video/mp4" />
+                </video>
+              </div> */}
+            </div>
+            <div className="w-100 d-flex justify-content-center col-md-5 col-12 mb-4 mb-md-0">
+              <div className="form-outline mb-4" style={{display: 'flex', gap: "5px"}}>
+                <input style={{opacity: '0.7', width: '300px'}} placeholder="Email" type="email" id="form5Example25" className="form-control" />
+                <Button style={{background: "red"}} size="lg">
+                  Button
+                </Button>
+              </div>
             </div>
           </div>
         </section>
-        <div className="w-100 d-flex justify-content-center col-md-5 col-12 mb-4 mb-md-0">
-          <div className="form-outline mb-4" style={{display: 'flex'}}>
-            <input style={{opacity: '0.7', width: '300px'}} placeholder="Email" type="email" id="form5Example25" className="form-control" />
-            <Button style={{background: "red"}} size="lg">
-              Button
-            </Button>
-          </div>
-        </div>
       </footer>
     </div>
   );

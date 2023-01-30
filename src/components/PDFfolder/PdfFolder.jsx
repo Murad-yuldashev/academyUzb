@@ -32,8 +32,8 @@ function PdfFolder() {
       {data
         .filter((e) => e.id === Number(malumot.id.replace(":", "")))
         .map((item) => (
-          <>
-            <header className="App-header">
+          <div key={item.id}>
+            <header  className="App-header">
               <Document
                 file={item.pdf}
                 onLoadSuccess={onDocumentLoadSuccess}
@@ -63,7 +63,7 @@ function PdfFolder() {
                 </Document>
               </div>
             </center> */}
-          </>
+          </div>
         ))}
     </div>
   );

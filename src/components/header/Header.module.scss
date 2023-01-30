@@ -2,33 +2,38 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("../../assets/war.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url("../../assets/war.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
   display: flex;
-  justify-content: space-around;
-  padding-top: 250px;
+  justify-content: center;
+  gap: 120px;
+  flex-wrap: wrap;
+  // justify-content: space-around;
+  padding-top: 240px;
   z-index: 1;
+  // opacity: .1;
   .headerImg {
     img {
-      width: 500px;
+      width: 600px;
       height: auto;
     }
   }
   .headerText {
-    width: 700px;
+    width: 550px;
     h2 {
-      font-size: 25px;
-      color: #fff;
+      font-size: 35px;
       margin-bottom: 20px;
       text-align: center;
       letter-spacing: 1px;
+      margin-bottom: 30px;
     }
     p {
       font-family: MuseoSans, Arial, Verdana, sans-serif;
-      font-size: 16px;
-      color: #fff;
+      font-size: 20px;
       line-height: 1.5;
+      letter-spacing: .5px;
+      text-align: left;
     }
   }
 }
